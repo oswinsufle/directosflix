@@ -1,0 +1,192 @@
+<html>
+ <head>
+  <title>
+   Avatar
+  </title>
+  
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #141b29;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .header img {
+            height: 40px;
+        }
+        .header nav {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        .header .profile {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+        .header .profile img {
+            height: 40px;
+            border-radius: 50%;
+        }
+        .main-content {
+            position: relative;
+            text-align: left;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .main-content img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .main-content .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+        .main-content .overlay h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .main-content .overlay p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .main-content .overlay .details {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .main-content .overlay .details span {
+            margin-right: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .main-content .overlay .buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .main-content .overlay .buttons button {
+            background-color: #f9f9f9;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .main-content .overlay .buttons button.trailer {
+            background-color: #6c757d;
+            color: white;
+        }
+        .suggestions {
+            padding: 20px;
+        }
+        .suggestions h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .suggestions .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .suggestions .tabs div {
+            margin-right: 20px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .suggestions .tabs div.active {
+            border-bottom: 2px solid white;
+        }
+        .suggestions .movies {
+            display: flex;
+            overflow-x: auto;
+        }
+        .suggestions .movies img {
+            width: 200px;
+            height: 120px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="Logo" height="40" src="imagens/etec1.png" width="100"/>
+   <nav>
+    <a href="index.html">
+     INÍCIO
+    </a>
+    
+    <a href="minhalista.html">
+     MINHA LISTA
+    </a>
+
+   </nav>
+   <div class="profile">
+    <img alt="Profile Picture" height="40" src="imagens/perfil.png" width="40"/>
+    <span>
+     Marina
+    </span>
+   </div>
+  </div>
+  <div class="main-content">
+   <img alt="capa" height="1080" src="imagens/avatar2posterlado.jpg" width="1920"/>
+   <div class="overlay">
+    <h1>
+     Avatar
+    </h1>
+    <p>
+        O Caminho da Água
+    </p>
+    <div class="details">
+     <span>
+      14
+     </span>
+     
+     <span>
+      2022 - 3h 12m - Ficção Científica e Ação
+     </span>
+    </div>
+    <p>
+        Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para ficarem juntos. <br> No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga <br> ameaça ressurge, e Jake deve travar uma guerra difícil contra os humanos.
+    </p>
+    <div class="buttons">
+     <button>
+      <i class="fas fa-play">
+      </i>
+       <a  href="https://www.disneyplus.com/pt-br/browse/entity-e6ef640e-787e-4477-aba4-9e05925ebac2"> ASSISTIR </a>
+     </button>
+     <button class="trailer">
+     <a href="https://www.youtube.com/watch?v=d9MyW72ELq0">TRAILER</a> 
+     </button>
+     
+    </div>
+   </div>
+  </div>
+ 
+ </body>
+</html>
